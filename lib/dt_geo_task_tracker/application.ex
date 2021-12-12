@@ -7,6 +7,7 @@ defmodule DtGeoTaskTracker.Application do
 
   def start(_type, _args) do
     children = [
+      DtGeoTaskTracker.Endpoint
       # Starts a worker by calling: DtGeoTaskTracker.Worker.start_link(arg)
       # {DtGeoTaskTracker.Worker, arg}
     ]
